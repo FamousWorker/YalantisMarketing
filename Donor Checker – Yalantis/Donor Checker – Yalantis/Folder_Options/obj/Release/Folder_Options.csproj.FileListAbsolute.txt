@@ -1,0 +1,17 @@
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\Yalantis Marketing.exe.config
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\Yalantis Marketing.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\Yalantis Marketing.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\HtmlAgilityPack.dll
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\Newtonsoft.Json.dll
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\HtmlAgilityPack.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\HtmlAgilityPack.xml
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Release\Newtonsoft.Json.xml
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.csprojAssemblyReference.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.Form1.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.SearchResult.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.Properties.Resources.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.csproj.GenerateResource.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.csproj.CoreCompileInputs.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Folder_Options.csproj.CopyComplete
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Yalantis Marketing.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Release\Yalantis Marketing.pdb

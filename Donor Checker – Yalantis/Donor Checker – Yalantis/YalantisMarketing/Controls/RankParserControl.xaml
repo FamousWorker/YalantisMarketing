@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.RankParserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:elements="clr-namespace:YalantisMarketing.Controls.Elements"
+             mc:Ignorable="d" >
+    <StackPanel Orientation="Vertical">
+        <GroupBox Header="Select a file (*.csv)">
+            <elements:FileBrowser x:Name="File_browser"></elements:FileBrowser>
+        </GroupBox>        
+        <StackPanel Orientation="Horizontal">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <elements:Counter x:Name="Time_out_counter"  CounterText="Time out" CounterValue="5"></elements:Counter>
+                <elements:Counter x:Name="Thread_counter"  CounterText="Streams" CounterValue="1" Grid.Column="1"></elements:Counter>
+                <elements:ProxyToggleSwitch Grid.Column="2" x:Name="Proxy_switcher"  Grid.Row="0" ></elements:ProxyToggleSwitch>
+                <CheckBox x:Name="Cf_Tf_checkbox" Content="CF/TF" Margin="4" Grid.Row="1" Grid.Column="0"></CheckBox>
+                <CheckBox x:Name="Da_Pa_checkbox" Content="DA/PA" Margin="4" Grid.Row="1" Grid.Column="1"></CheckBox>
+                <CheckBox x:Name="Dr_checkbox" Content="DR" Grid.Row="1" Margin="4" Grid.Column="2"></CheckBox>
+            </Grid>
+            <GroupBox Header="Source">
+                <ListBox x:Name="Source_listbox">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="{Binding name}"></RadioButton>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+        </StackPanel>
+        <elements:ProgressPanel x:Name="Progress_panel" ></elements:ProgressPanel>
+    </StackPanel>
+</UserControl>

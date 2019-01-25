@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.Elements.ColumnSelector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YalantisMarketing.Controls.Elements"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" 
+             mc:Ignorable="d" Style="{StaticResource Element_base_style}">
+    <ComboBox x:Name="Selector_combobox" IsEditable="True" Width="35" KeyDown="Selector_combobox_KeyDown">
+        <ComboBoxItem Content=" "></ComboBoxItem>
+        <System:String>B</System:String>
+        <System:String>C</System:String>
+        <System:String>D</System:String>
+        <System:String>E</System:String>
+        <System:String>F</System:String>
+        <System:String>G</System:String>
+        <System:String>H</System:String>
+        <System:String>I</System:String>
+        <System:String>J</System:String>
+        <System:String>K</System:String>
+        <System:String>L</System:String>
+        <System:String>M</System:String>
+        <System:String>N</System:String>
+        <System:String>O</System:String>
+        <System:String>P</System:String>
+    </ComboBox>
+</UserControl>

@@ -1,0 +1,12 @@
+﻿<Application x:Class="YalantisMarketing.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:YalantisMarketing"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="Element_base_style">
+            <Setter Property="Control.Height" Value="20"></Setter>
+            <Setter Property="Control.Margin" Value="4"></Setter>            
+        </Style>
+    </Application.Resources>
+</Application>

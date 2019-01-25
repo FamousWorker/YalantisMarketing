@@ -1,0 +1,15 @@
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\bin\Release\csv_tool.exe.config
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\bin\Release\csv_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\bin\Release\csv_tool.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.csprojAssemblyReference.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\MainWindow.g.cs
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\App.g.cs
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool_MarkupCompile.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool_MarkupCompile.lref
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\MainWindow.baml
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.g.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.Properties.Resources.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.csproj.GenerateResource.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.csproj.CoreCompileInputs.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\csv_tool\csv_tool\obj\Release\csv_tool.pdb

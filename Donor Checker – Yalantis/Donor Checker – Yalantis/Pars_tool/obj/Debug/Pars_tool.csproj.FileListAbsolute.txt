@@ -1,0 +1,23 @@
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\Pars_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\Pars_tool.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csprojAssemblyReference.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.Form1.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.Properties.Resources.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csproj.GenerateResource.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csproj.CoreCompileInputs.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\HtmlAgilityPack.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\HtmlAgilityPack.xml
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csproj.CopyComplete
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\Pars_tool.exe
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\Pars_tool.pdb
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\HtmlAgilityPack.dll
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\HtmlAgilityPack.pdb
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Debug\HtmlAgilityPack.xml
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csprojResolveAssemblyReference.cache
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.Form1.resources
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.Properties.Resources.resources
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.csproj.GenerateResource.Cache
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.exe
+D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Debug\Pars_tool.pdb

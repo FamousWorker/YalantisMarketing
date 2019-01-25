@@ -1,0 +1,9 @@
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Release\Pars_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\bin\Release\Pars_tool.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.csprojAssemblyReference.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.Form1.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.Properties.Resources.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.csproj.GenerateResource.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.csproj.CoreCompileInputs.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Pars_tool\obj\Release\Pars_tool.pdb

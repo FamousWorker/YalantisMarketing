@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.OutreachControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:elements="clr-namespace:YalantisMarketing.Controls.Elements"
+             mc:Ignorable="d" 
+             d:DesignHeight="209" d:DesignWidth="292">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="Load_local_combobox" DropDownClosed="Load_local_combobox_dropdrownclosed" Width="51" Style="{StaticResource Element_base_style}" Grid.Column="0" IsEditable="True">
+            <ComboBoxItem Content="HTTP"/>
+            <ComboBoxItem Content="Local"/>
+        </ComboBox>
+        <elements:FileBrowser x:Name="File_Browser" Grid.Column="1"></elements:FileBrowser>
+        <TextBox x:Name="Domains_textbox" Grid.ColumnSpan="2" Grid.Row="1"  TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"></TextBox>
+    </Grid>
+</UserControl>

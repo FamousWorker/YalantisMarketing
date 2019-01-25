@@ -1,0 +1,19 @@
+﻿<Window x:Class="csv_tool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csv_tool"
+        mc:Ignorable="d"
+        Title="Yalantis Marketing/CSV Tool" Height="116.111" Width="285.395" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Файл 1:" HorizontalAlignment="Left" Height="23" Margin="6,7,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Файл 2:" HorizontalAlignment="Left" Height="23" Margin="6,35,0,0" VerticalAlignment="Top" Width="53"/>
+        <TextBox HorizontalAlignment="Left" Name="txtBox1"  Height="21" Margin="61,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" Name="txtBox2" Height="21" Margin="61,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <Button Content="Обзор" HorizontalAlignment="Left" Height="21" Margin="226,9.667,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1"/>
+        <Button Content="Обзор" HorizontalAlignment="Left" Height="21" Margin="226,38.001,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_2"/>
+        <Button Content="Синхронизировать" HorizontalAlignment="Left" Height="21" Margin="93,64,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
+
+    </Grid>
+</Window>

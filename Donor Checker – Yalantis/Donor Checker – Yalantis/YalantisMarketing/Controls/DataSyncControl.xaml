@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.DataSyncControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:elements="clr-namespace:YalantisMarketing.Controls.Elements"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" >
+    <StackPanel Orientation="Vertical">
+        <GroupBox Header="Data sync / Select a file (*.csv)">
+            <StackPanel Orientation="Vertical">
+                <elements:FileBrowser x:Name="Save_filebrowser" ToolTip="Result file path"></elements:FileBrowser>
+                <elements:FileBrowser x:Name="Example_filebrowser" ToolTip="Example file path"></elements:FileBrowser>
+                <StackPanel x:Name="Selectors_panel" Orientation="Horizontal" >
+                    <ComboBox x:Name="MainSelector_combobox" IsEditable="True" Width="35" Style="{StaticResource Element_base_style}" KeyDown="MainSelector_combobox_KeyDown" >
+                        <System:String>A</System:String>
+                        <System:String>B</System:String>
+                        <System:String>C</System:String>
+                        <System:String>D</System:String>
+                        <System:String>E</System:String>
+                        <System:String>F</System:String>
+                        <System:String>G</System:String>
+                        <System:String>H</System:String>
+                        <System:String>I</System:String>
+                        <System:String>J</System:String>
+                        <System:String>K</System:String>
+                        <System:String>L</System:String>
+                        <System:String>M</System:String>
+                        <System:String>N</System:String>
+                        <System:String>O</System:String>
+                        <System:String>P</System:String>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Link cutter / Select a file (*.csv)">
+            <elements:FileBrowser x:Name="Cutter_filebrowser"></elements:FileBrowser>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

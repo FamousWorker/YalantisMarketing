@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.WhoisControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:elements="clr-namespace:YalantisMarketing.Controls.Elements"
+             mc:Ignorable="d" >
+    <StackPanel Orientation="Vertical">
+        <GroupBox Header="Select a file (*.csv)">
+            <elements:FileBrowser x:Name="File_browser"></elements:FileBrowser>
+        </GroupBox>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="Params_listbox" Margin="4">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding name, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource Element_base_style}"></Label>
+                            <CheckBox Content="" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <elements:Counter x:Name="Time_out_counter"  CounterText="Time out" CounterValue="5"></elements:Counter>
+                <elements:Counter x:Name="Thread_counter"  CounterText="Streams" CounterValue="1" Grid.Column="1"></elements:Counter>
+                <StackPanel Orientation="Vertical" Grid.Row="1">
+                    <Label Content="Source"></Label>
+                    <ComboBox x:Name="Source_combobox" Style="{StaticResource Element_base_style}" IsEditable="True">
+                        <ComboBoxItem/>
+                        <ComboBoxItem/>
+                    </ComboBox>
+                </StackPanel>
+                <elements:ProxyToggleSwitch Grid.Column="1" Grid.Row="1" x:Name="Proxy_switcher"></elements:ProxyToggleSwitch>
+            </Grid>            
+        </Grid>
+        <elements:ProgressPanel x:Name="Progress_panel" ></elements:ProgressPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="YalantisMarketing.Controls.Elements.ProxyToggleSwitch"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YalantisMarketing.Controls.Elements"
+             mc:Ignorable="d" >
+    <StackPanel Orientation="Vertical">
+        <Label Content="Proxy"></Label>
+        <ComboBox x:Name="Proxy_switcher_combobox" Style="{StaticResource Element_base_style}" Width="45" IsEditable="True" KeyDown="Proxy_switcher_combobox_KeyDown">
+            <ComboBoxItem Content="Off"></ComboBoxItem>
+            <ComboBoxItem Content="On"></ComboBoxItem>
+        </ComboBox>
+    </StackPanel>
+</UserControl>

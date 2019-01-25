@@ -1,0 +1,10 @@
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\bin\Release\Donor Checker – Yalantis.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\bin\Release\Donor Checker – Yalantis.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor_Checker___Yalantis.CheckForm.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor_Checker___Yalantis.Properties.Resources.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor_Checker___Yalantis.SearchResult.resources
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor Checker – Yalantis.csproj.GenerateResource.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor Checker – Yalantis.csproj.CoreCompileInputs.cache
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor Checker – Yalantis.exe
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor Checker – Yalantis.pdb
+E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Release\Donor Checker – Yalantis.csprojAssemblyReference.cache
