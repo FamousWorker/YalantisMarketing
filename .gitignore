@@ -22,5 +22,5 @@
 *.out
 *.app
 # Debug,Release folders
-*/Debug
-*/Release
+Debug/*
+Release/*
