@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -64,6 +65,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Converters\BoolToImageConverter.cs" />
+    <Compile Include="Classes\CsvReadWrite\CsvReaderWriter.cs" />
+    <Compile Include="Classes\CsvReadWrite\ICsvReaderWriter.cs" />
+    <Compile Include="Classes\DataContexts\OutReachDataContex.cs" />
+    <Compile Include="Classes\OutreachPackage\IReader.cs" />
+    <Compile Include="Classes\OutreachPackage\LocalReader.cs" />
+    <Compile Include="Classes\OutreachPackage\SearchResult.cs" />
+    <Compile Include="Classes\OutreachPackage\WebReader.cs" />
+    <Compile Include="Windows\SearchResultWindow.xaml.cs">
+      <DependentUpon>SearchResultWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Controls\Elements\ColumnSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -146,6 +158,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\SearchResultWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -173,8 +189,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Resource Include="Resources\found.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\not_found.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

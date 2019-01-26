@@ -23,15 +23,45 @@ namespace YalantisMarketing
         public MainWindow()
         {
             InitializeComponent();
+            HideButtons();
+            Outreach_panel.Visibility = Visibility.Visible;
         }
-        
+        void HideButtons()
+        {
+            Outreach_panel.Visibility = Visibility.Collapsed;
+            Data_sync_panel.Visibility = Visibility.Collapsed;
+            Rank_parser_panel.Visibility = Visibility.Collapsed;
+            Whois_panel.Visibility = Visibility.Collapsed;
+            Lan_panel.Visibility = Visibility.Collapsed;
+        }
         private void Main_TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             TabControl mtc = sender as TabControl;
-            foreach (var item in Main_Grid.RowDefinitions)
+            HideButtons();
+            switch (mtc.SelectedIndex)  
             {
-                
+                case 0:
+                    Outreach_panel.Visibility = Visibility.Visible;
+                    break;
+                case 1:
+                    Data_sync_panel.Visibility = Visibility.Visible;
+                    break;
+                case 2:
+                    Rank_parser_panel.Visibility = Visibility.Visible;
+                    break;
+                case 3:
+                    Whois_panel.Visibility = Visibility.Visible;
+                    break;
+                case 4:
+                    Lan_panel.Visibility = Visibility.Visible;
+                    break;
+              
             }
+        }
+
+        private void Check_button_Click(object sender, RoutedEventArgs e)
+        {
+            Outreach_tab_control.CheckDomains();
         }
     }
 }

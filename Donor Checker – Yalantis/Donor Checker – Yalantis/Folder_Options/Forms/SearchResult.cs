@@ -25,7 +25,7 @@ namespace Folder_Options
             }                
             else
                 csvdomains = GetCsvDomains(filepath);
-            resultRows = search(csvdomains, domains);
+            resultRows = Search(csvdomains, domains);
             List<SearchResultRow> Rows = new List<SearchResultRow>();
             foreach (var item in resultRows)
             {
@@ -54,7 +54,7 @@ namespace Folder_Options
         }
 
 
-        private List<SearchResultRow> search(List<string> csvdomains, string[] domains)
+        private List<SearchResultRow> Search(List<string> csvdomains, string[] domains)
         {
             List<SearchResultRow> Rows = new List<SearchResultRow>();
             foreach (var item in domains)

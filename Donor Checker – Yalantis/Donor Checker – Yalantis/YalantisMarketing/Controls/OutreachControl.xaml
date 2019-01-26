@@ -15,11 +15,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="Load_local_combobox" DropDownClosed="Load_local_combobox_dropdrownclosed" Width="51" Style="{StaticResource Element_base_style}" Grid.Column="0" IsEditable="True">
+        <ComboBox x:Name="Load_local_combobox" DropDownClosed="Load_local_combobox_dropdrownclosed" MinWidth ="60"  Style="{StaticResource Element_base_style}" Grid.Column="0" IsEditable="True">
             <ComboBoxItem Content="HTTP"/>
             <ComboBoxItem Content="Local"/>
         </ComboBox>
         <elements:FileBrowser x:Name="File_Browser" Grid.Column="1"></elements:FileBrowser>
-        <TextBox x:Name="Domains_textbox" Grid.ColumnSpan="2" Grid.Row="1"  TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"></TextBox>
+        <TextBox x:Name="Domains_textbox"  Grid.ColumnSpan="2" Grid.Row="1" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
     </Grid>
 </UserControl>

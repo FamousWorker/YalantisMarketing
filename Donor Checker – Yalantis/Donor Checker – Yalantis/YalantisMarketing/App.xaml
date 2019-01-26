@@ -2,11 +2,23 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:YalantisMarketing"
+             xmlns:converters ="clr-namespace:YalantisMarketing.Classes.Converters"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="Element_base_style">
             <Setter Property="Control.Height" Value="20"></Setter>
-            <Setter Property="Control.Margin" Value="4"></Setter>            
+            <Setter Property="Control.Margin" Value="4"></Setter>
         </Style>
+        <Style x:Key="Read_only_datagrid_style">
+            <Setter Property="DataGrid.AutoGenerateColumns" Value="False"></Setter>
+            <Setter Property="DataGrid.Margin" Value="4"></Setter>
+            <Setter Property="DataGrid.IsReadOnly" Value="True"></Setter>
+            <Setter Property="DataGrid.CanUserAddRows" Value="False"></Setter>
+            <Setter Property="DataGrid.CanUserDeleteRows" Value="False"></Setter>
+        </Style>
+
+
+        <converters:BoolToImageConverter x:Key="BoolToImageConverter"></converters:BoolToImageConverter>
+        
     </Application.Resources>
 </Application>
