@@ -13,7 +13,7 @@ namespace YalantisMarketing.Classes.OutreachPackage
 
         public LocalReader()
         {
-            _csvReaderWriter = new CsvReaderWriter();
+            _csvReaderWriter = new SimpleCsvReaderWriter();
         }
         public List<string> Read(string filepath)
         {

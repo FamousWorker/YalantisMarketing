@@ -17,3 +17,13 @@ D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker 
 D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.csproj.GenerateResource.Cache
 D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.exe
 D:\Projects\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\bin\Debug\Donor Checker – Yalantis.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\bin\Debug\Donor Checker – Yalantis.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.csprojAssemblyReference.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Folder_Options.CheckForm.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor_Checker___Yalantis.Properties.Resources.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Folder_Options.SearchResult.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.csproj.GenerateResource.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.csproj.CoreCompileInputs.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Donor Checker – Yalantis\obj\Debug\Donor Checker – Yalantis.pdb

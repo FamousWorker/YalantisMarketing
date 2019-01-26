@@ -27,6 +27,10 @@ namespace YalantisMarketing.Controls.Elements
         }
         public int Index
         {
+            set
+            {
+                Selector_combobox.SelectedIndex = value;
+            }        
             get
             {
                 return Selector_combobox.SelectedIndex;

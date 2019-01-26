@@ -28,3 +28,20 @@ E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yala
 E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Yalantis Marketing.pdb
 E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\HtmlAgilityPack.dll
 E:\Soft Things\Development Projects\Frealance development\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Newtonsoft.Json.dll
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Yalantis Marketing.exe.config
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Yalantis Marketing.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Yalantis Marketing.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\HtmlAgilityPack.dll
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Newtonsoft.Json.dll
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\HtmlAgilityPack.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\HtmlAgilityPack.xml
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\bin\Debug\Newtonsoft.Json.xml
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.csprojAssemblyReference.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.Form1.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.SearchResult.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.Properties.Resources.resources
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.csproj.GenerateResource.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.csproj.CoreCompileInputs.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Folder_Options.csproj.CopyComplete
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Yalantis Marketing.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Folder_Options\obj\Debug\Yalantis Marketing.pdb

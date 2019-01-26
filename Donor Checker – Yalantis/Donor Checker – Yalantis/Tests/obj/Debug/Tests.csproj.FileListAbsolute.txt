@@ -1,0 +1,12 @@
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\Tests.exe.config
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\Tests.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\Tests.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\YalantisMarketing.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\YalantisMarketing.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\YalantisMarketing.exe.config
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.csproj.CopyComplete
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.exe
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.pdb

@@ -9,5 +9,7 @@ namespace YalantisMarketing.Classes.CsvReadWrite
    public interface ICsvReaderWriter
     {
         List<string> ReadFile(string filepath);
+
+        bool Write(string filepath, ITextGetter text);
     }
 }

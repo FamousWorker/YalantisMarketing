@@ -8,8 +8,9 @@ using System.Windows;
 
 namespace YalantisMarketing.Classes.CsvReadWrite
 {
-    public class CsvReaderWriter : ICsvReaderWriter
+    public class SimpleCsvReaderWriter : ICsvReaderWriter
     {
+        
         public List<string> ReadFile(string filepath)
         {
             List<string> res = new List<string>();
@@ -42,5 +43,32 @@ namespace YalantisMarketing.Classes.CsvReadWrite
             }
             return res;
         }
+
+        public bool Write(string filepath, ITextGetter text)
+        {
+            writing:
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filepath))
+                {
+                    writer.WriteLine(text.GetWritedText());
+                    writer.Flush();
+                }
+                return true;
+            }
+            catch (System.IO.IOException)
+            {
+                if (MessageBox.Show("Невозможно получить доступ к файлу, файл используется другим процессом! Попробовать еще раз?", "Ошибка", MessageBoxButton.YesNo)
+                    == MessageBoxResult.Yes)
+                    goto writing;
+                else return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+        }
+        
     }
 }

@@ -11,26 +11,7 @@
             <StackPanel Orientation="Vertical">
                 <elements:FileBrowser x:Name="Save_filebrowser" ToolTip="Result file path"></elements:FileBrowser>
                 <elements:FileBrowser x:Name="Example_filebrowser" ToolTip="Example file path"></elements:FileBrowser>
-                <StackPanel x:Name="Selectors_panel" Orientation="Horizontal" >
-                    <ComboBox x:Name="MainSelector_combobox" IsEditable="True" Width="35" Style="{StaticResource Element_base_style}" KeyDown="MainSelector_combobox_KeyDown" >
-                        <System:String>A</System:String>
-                        <System:String>B</System:String>
-                        <System:String>C</System:String>
-                        <System:String>D</System:String>
-                        <System:String>E</System:String>
-                        <System:String>F</System:String>
-                        <System:String>G</System:String>
-                        <System:String>H</System:String>
-                        <System:String>I</System:String>
-                        <System:String>J</System:String>
-                        <System:String>K</System:String>
-                        <System:String>L</System:String>
-                        <System:String>M</System:String>
-                        <System:String>N</System:String>
-                        <System:String>O</System:String>
-                        <System:String>P</System:String>
-                    </ComboBox>
-                </StackPanel>
+                <StackPanel x:Name="Selectors_panel" Orientation="Horizontal" ></StackPanel>
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Link cutter / Select a file (*.csv)">

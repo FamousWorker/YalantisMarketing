@@ -17,7 +17,7 @@ namespace YalantisMarketing.Classes.OutreachPackage
 
         public WebReader()
         {
-            _csvReaderWriter = new CsvReaderWriter();
+            _csvReaderWriter = new SimpleCsvReaderWriter();
             _filename = "loadetfile.txt";
         }
         public List<string> Read(string filepath)

@@ -78,7 +78,7 @@ namespace Folder_Options.Classes
             List<string[]> result = new List<string[]>();
             try
             {
-                string[] Lines = File.ReadAllLines(filepath);                
+                string[] Lines = File.ReadAllLines(filepath);
                 foreach (var item in Lines)
                 {
                     string[] resultline = new string[7];

@@ -53,6 +53,7 @@ namespace Folder_Options.Classes
         {
             foreach (var item in preresult)
             {
+                if (item == string.Empty) continue;
                 string addetstring = item;
                 if (addetstring.Contains("https://"))
                 {
