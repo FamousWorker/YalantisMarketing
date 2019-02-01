@@ -22,7 +22,7 @@
                 </Grid.ColumnDefinitions>
                 <elements:Counter x:Name="Time_out_counter"  CounterText="Time out" CounterValue="5"></elements:Counter>
                 <elements:Counter x:Name="Thread_counter"  CounterText="Streams" CounterValue="1" Grid.Column="1"></elements:Counter>
-                <elements:ProxyToggleSwitch Grid.Column="2" x:Name="Proxy_switcher"  Grid.Row="0" ></elements:ProxyToggleSwitch>
+                <elements:ProxyToggleSwitch x:Name="Proxy_switcher"   Grid.Column="2"  Grid.Row="0" ></elements:ProxyToggleSwitch>
                 <CheckBox x:Name="Cf_Tf_checkbox" Content="CF/TF" Margin="4" Grid.Row="1" Grid.Column="0"></CheckBox>
                 <CheckBox x:Name="Da_Pa_checkbox" Content="DA/PA" Margin="4" Grid.Row="1" Grid.Column="1"></CheckBox>
                 <CheckBox x:Name="Dr_checkbox" IsEnabled="False" Content="DR" Grid.Row="1" Margin="4" Grid.Column="2"></CheckBox>

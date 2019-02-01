@@ -10,10 +10,12 @@ namespace Tests
     {
         static void Main(string[] args)
         {
-            LinkCutterTest lk = new LinkCutterTest();
-            lk.Tests("linkcuttertest.csv");
+            //LinkCutterTest lk = new LinkCutterTest();
+            //lk.Tests("linkcuttertest.csv");
 
-
+            whoistest wit = new whoistest();
+            wit.CreationDate();
+            Console.ReadLine();
         }
     }
 }

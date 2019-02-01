@@ -25,7 +25,7 @@ namespace YalantisMarketing.Controls.Elements
             InitializeComponent();
             Proxy_switcher_combobox.SelectedIndex = 0;
         }
-
+        public event Action<bool> ProxySwitched;
         public bool isProxy
         {
             get
@@ -38,6 +38,11 @@ namespace YalantisMarketing.Controls.Elements
         private void Proxy_switcher_combobox_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void Proxy_switcher_combobox_DropDownClosed(object sender, EventArgs e)
+        {
+            ProxySwitched?.Invoke(isProxy);
         }
     }
 }

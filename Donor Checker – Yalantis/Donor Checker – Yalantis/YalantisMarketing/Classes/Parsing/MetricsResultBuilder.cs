@@ -21,7 +21,7 @@ namespace YalantisMarketing.Classes.Parsing
         public override string Build(string domain)
         {
             string result = "";
-            string json = GetHTML(domain);
+            string json = GetHTML(_baseurl + domain);
             if (json != null)
             {
                 _jsonResult = JsonConvert.DeserializeObject<JsonWrap>(json);                

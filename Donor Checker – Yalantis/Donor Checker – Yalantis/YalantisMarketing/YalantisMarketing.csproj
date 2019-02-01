@@ -67,6 +67,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Converters\BoolToImageConverter.cs" />
+    <Compile Include="Classes\Converters\ProxyServerLimitsConverter.cs" />
     <Compile Include="Classes\CsvReadWrite\ITextGetter.cs" />
     <Compile Include="Classes\CsvReadWrite\SimpleCsvReaderWriter.cs" />
     <Compile Include="Classes\CsvReadWrite\ICsvReaderWriter.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Classes\DataContexts\OutReachDataContex.cs" />
     <Compile Include="Classes\DataContexts\ProgressPanelDataContex.cs" />
     <Compile Include="Classes\DataContexts\RankParserDataContex.cs" />
+    <Compile Include="Classes\DataContexts\WhoisDataContext.cs" />
     <Compile Include="Classes\DataSyncPackage\DataSyncher.cs" />
     <Compile Include="Classes\DataSyncPackage\LinkCutter.cs" />
     <Compile Include="Classes\Delegates.cs" />
@@ -87,10 +89,14 @@
     <Compile Include="Classes\Parsing\EmptyResultBuilder.cs" />
     <Compile Include="Classes\Parsing\IWebLoader.cs" />
     <Compile Include="Classes\Parsing\MetricsResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\ProxyServer.cs" />
+    <Compile Include="Classes\Parsing\ProxyServers.cs" />
     <Compile Include="Classes\Parsing\SimilarWebResultBuilder.cs" />
     <Compile Include="Classes\Parsing\SimpleWebLoader.cs" />
+    <Compile Include="Classes\Parsing\WhoisResulBuilder.cs" />
     <Compile Include="Classes\PropertyChancher.cs" />
     <Compile Include="Classes\RankParserPackage\RankParserParams.cs" />
+    <Compile Include="Classes\WhoisPackage\WhoisParameters.cs" />
     <Compile Include="Windows\SearchResultWindow.xaml.cs">
       <DependentUpon>SearchResultWindow.xaml</DependentUpon>
     </Compile>

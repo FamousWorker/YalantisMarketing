@@ -16,8 +16,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label Content="Time left:" Grid.Column="0"></Label>
-        <Label Content="{Binding Time, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"></Label>
-        <Label Content="{Binding Files, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2" HorizontalContentAlignment="Right"></Label>
-        <ProgressBar Value="{Binding CurrentValue, UpdateSourceTrigger=PropertyChanged}" Maximum="{Binding  MaxValue, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource Element_base_style}" MinWidth="100" Grid.Row="1" Grid.ColumnSpan="3"></ProgressBar>
+        <Label x:Name="Lab0" Content="{Binding leftTime, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"></Label>
+        <Label x:Name="Lab1" Content="{Binding leftFiles, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2" HorizontalContentAlignment="Right"></Label>
+        <ProgressBar x:Name="PB" Value="{Binding CurrentValue, UpdateSourceTrigger=PropertyChanged}" Maximum="{Binding  MaxValue, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource Element_base_style}" MinWidth="100" Grid.Row="1" Grid.ColumnSpan="3"></ProgressBar>
     </Grid>
 </UserControl>

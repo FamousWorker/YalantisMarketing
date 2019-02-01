@@ -9,6 +9,8 @@ namespace YalantisMarketing.Classes.Parsing
 {
     public interface IWebLoader
     {
-        string GetHTML(string url, WebProxy proxy);
+        string GetHTML(string url);
+
+        WebProxy Proxy { set; }
     }
 }

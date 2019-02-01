@@ -19,6 +19,6 @@
 
 
         <converters:BoolToImageConverter x:Key="BoolToImageConverter"></converters:BoolToImageConverter>
-        
+        <converters:ProxyServerLimitsConverter x:Key="ProxyServerLimitsConverter"></converters:ProxyServerLimitsConverter>
     </Application.Resources>
 </Application>

@@ -7,7 +7,8 @@
              mc:Ignorable="d" >
     <StackPanel Orientation="Vertical">
         <Label Content="Proxy"></Label>
-        <ComboBox x:Name="Proxy_switcher_combobox" Style="{StaticResource Element_base_style}" Width="45" IsEditable="True" KeyDown="Proxy_switcher_combobox_KeyDown">
+        <ComboBox x:Name="Proxy_switcher_combobox" Style="{StaticResource Element_base_style}" DropDownClosed="Proxy_switcher_combobox_DropDownClosed"
+                  Width="45" IsEditable="True" KeyDown="Proxy_switcher_combobox_KeyDown">
             <ComboBoxItem Content="Off"></ComboBoxItem>
             <ComboBoxItem Content="On"></ComboBoxItem>
         </ComboBox>

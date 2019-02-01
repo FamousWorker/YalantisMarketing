@@ -20,7 +20,7 @@ namespace YalantisMarketing.Classes.Parsing
             try
             {
                 HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-                string html = GetHTML(domain);
+                string html = GetHTML(_baseurl + domain);
                 if (html == null)
                 {
                     result += ";-;;;;;;;;;;;;;;;;";

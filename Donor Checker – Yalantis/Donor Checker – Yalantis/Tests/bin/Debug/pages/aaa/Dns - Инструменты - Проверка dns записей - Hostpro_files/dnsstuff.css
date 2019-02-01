@@ -1,0 +1,58 @@
+/*#content { padding-bottom: 10px; background: #ffffff; width: 855px; margin: 0px auto;}*/
+
+.hidden { display: none; }
+
+fieldset { background: #F7F7F7; border-left: 10px solid #626262; position: relative; padding: 3px 0 3px 10px; height:550px;}
+
+legend { font-size:16px; font-family:Verdana; color: #ff8a00; font-weight: bold;}
+legend b { color: #626262;}
+
+/*h2 { font-size:13px !important; font-family:Verdana !important; margin-top: 15px !important; color: #ff8a00; text-align: center; font-weight: bold;}
+h3 { font-size:13px !important; font-family:Verdana !important; margin: 11px 0 -9px 0 !important; font-weight: bold;}*/
+/*.whois { font-size:13px; font-family:Verdana; margin: -15px 0 -9px 0; }
+p.mod_date { color: #636466; font-size: 9px; font-family:Verdana; padding: -2px 0 10px 0px; margin-top: -5px; line-height: 13px; font-weight: normal; }
+p.tracerout { padding: 9px;}
+ * html p.tracerout { padding: 20px;}
+p.input_desc { color: #636466; font-size: 9px; font-family:Verdana; padding: 3px 0 3px 0; margin: 0; line-height: 13px;}
+b.check_desc { color: #636466; font-size: 9px; font-family:Verdana; padding: -2px 0 3px 0; margin: 0; line-height: 13px; font-weight: normal; }
+input.textinput_single {width: 160px; height: 23px;}
+input.textinput_long {width: 230px; height: 23px;}
+input.textinput_split {width: 96px;height: 23px; margin-bottom:-1px;}
+td.graph {background: #3780c3; }
+select.selectinput_split {width: 60px; height: 23px;}
+input.tool-send-btn { background: #ff8a00; color: #FFFFFF; font-size:12px; width: 70px; height: 23px; margin: 0 5px 1px 0; }
+input.tool-send-btn-1 { background: #ff8a00; color: #FFFFFF; font-size:12px; width: 60px; height: 23px; margin: 0 5px 1px 0; }
+*/
+#myip {height: 30px;}
+/*p.myip_text { color: #7b7b7b; font-size: 14px; font-family:Verdana; padding: 7px 10 3px 25; margin: 0; line-height: 14px; font-weight: bold; text-align: center;}*/
+
+.firstRow {background-color: #eee;}
+.secondRow {background-color: #fff;}
+.link {color: #0000FF;}
+
+#menu {
+        width: 200px;
+        margin: 10px;
+        }
+
+#menu li a {
+        height: 32px;
+        voice-family: "\"}\"";
+        voice-family: inherit;
+        height: 24px;
+        text-decoration: none;
+        }
+
+#menu li a:link, #menu li a:visited {
+        color: #FFF;
+        display: block;
+        background:  url(/images/menu.gif);
+        padding: 8px 0 0 35px;
+        }
+
+#menu li a:hover {
+        color: #FFF;
+        background:  url(/images/menu.gif) 0 -32px;
+        padding: 8px 0 0 35px;
+        }
+

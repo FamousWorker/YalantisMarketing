@@ -1,0 +1,10 @@
+$(function() {
+$('.mmenu-butt').click(function(){
+    var hBlock = $('.footer-menu');
+    $(this).text(hBlock.is(':visible') ? 'Показать инструменты' : 'Скрыть инструменты');
+    hBlock.toggle('slow');
+});
+//$(".mmenu-butt").click(function() {
+//   $(".footer-menu").slideToggle (500);
+//});
+});

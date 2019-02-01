@@ -11,37 +11,37 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="Proxys_datagrid" VerticalScrollBarVisibility="Visible" IsReadOnly="True" ItemsSource="{Binding}" MinWidth="200"
-                  AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" CanUserDeleteRows="False" HorizontalContentAlignment="Stretch">
+                  AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" CanUserDeleteRows="False" HorizontalContentAlignment="Stretch" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="IP Adress:" Binding="{Binding IpAdress}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Limits:" Binding="{Binding Limits}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IP Adress:" Binding="{Binding IPAdress}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Limits:" Binding="{Binding Limits, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ProxyServerLimitsConverter}}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Orientation="Vertical" Grid.Column="1">
+        <StackPanel Orientation="Vertical" Grid.Column="1" >
             <GroupBox Header="HTTP Proxy:">
-                <TextBox  Style="{StaticResource Element_base_style}"></TextBox>
+                <TextBox x:Name="Adress_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
             </GroupBox>
             <GroupBox Header="User:">
-                <TextBox  Style="{StaticResource Element_base_style}"></TextBox>
+                <TextBox  x:Name="User_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
             </GroupBox>
             <StackPanel Orientation="Horizontal">
                 <GroupBox Header="Port:">
-                    <TextBox  Style="{StaticResource Element_base_style}"></TextBox>
+                    <TextBox x:Name="Port_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
                 </GroupBox>
                 <GroupBox Header="Limits:">
-                    <TextBox  Style="{StaticResource Element_base_style}"></TextBox>
+                    <TextBox x:Name="Limits_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
                 </GroupBox>
             </StackPanel>
             <GroupBox Header="Password:">
-                <TextBox  Style="{StaticResource Element_base_style}"></TextBox>
+                <TextBox x:Name="Password_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
             </GroupBox>
-            <Grid >
+            <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Content="Add" Style="{StaticResource Element_base_style}" Grid.Column="0"></Button>
-                <Button Content="Clear" Style="{StaticResource Element_base_style}" Grid.Column="1"></Button>
+                <Button Content="Add" Style="{StaticResource Element_base_style}" Grid.Column="0" Click="Add_Button_Click"></Button>
+                <Button Content="Clear" Style="{StaticResource Element_base_style}" Grid.Column="1" Click="Clear_Button_Click"></Button>
             </Grid>
         </StackPanel>
     </Grid>

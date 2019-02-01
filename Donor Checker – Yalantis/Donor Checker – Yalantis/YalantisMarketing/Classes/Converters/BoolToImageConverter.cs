@@ -17,7 +17,7 @@ namespace YalantisMarketing.Classes.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if ((bool)value)
-                return   System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                return System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
                  Properties.Resources.found.GetHbitmap(),
                  IntPtr.Zero,
                  Int32Rect.Empty,
@@ -35,4 +35,5 @@ namespace YalantisMarketing.Classes.Converters
             return false;
         }
     }
+    
 }

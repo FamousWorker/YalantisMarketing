@@ -19,7 +19,7 @@ namespace YalantisMarketing.Classes.CsvReadWrite
             if (_list != null)
                 foreach (var item in _list)
                 {
-                    resultstring += Environment.NewLine + item;
+                    resultstring += item + Environment.NewLine ;
                 }
             return resultstring;
         }

@@ -30,18 +30,17 @@ namespace YalantisMarketing.Controls.Elements
             _progressPanelDataContex = new ProgressPanelDataContex();
             this.DataContext = _progressPanelDataContex;
         }
-        public void Init(int maxvalue, string time)
+        public void Init(int maxcount, int streamscount, int timeout)
         {
-            _progressPanelDataContex.Files = "0/" + maxvalue.ToString();
-            _progressPanelDataContex.CurrentValue = 0;
-            _progressPanelDataContex.MaxValue = maxvalue;
-            _progressPanelDataContex.Time = time;
+            _progressPanelDataContex.Init(maxcount, streamscount, timeout);
         }
-        public void Update(string time, int files)
+        public void Update()
         {
-            _progressPanelDataContex.Files = (_progressPanelDataContex.MaxValue - files) + "/" + _progressPanelDataContex.MaxValue.ToString();
-            _progressPanelDataContex.Time = time;
             _progressPanelDataContex.CurrentValue++;
+        }
+        public void End()
+        {
+            _progressPanelDataContex.CurrentValue = _progressPanelDataContex.MaxValue;
         }
     }
 }

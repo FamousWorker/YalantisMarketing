@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using YalantisMarketing.Classes.Parsing;
 
 namespace YalantisMarketing.Controls
 {
@@ -23,6 +24,39 @@ namespace YalantisMarketing.Controls
         public LanControl()
         {
             InitializeComponent();
+            ProxyServers.ServersInit();
+            Proxys_datagrid.ItemsSource = ProxyServers.Servers;
+        }
+
+        private void Add_Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ProxyServers.AddProxy(Convert.ToInt32(Port_textbox.Text), Adress_textbox.Text,
+                User_textbox.Text, Password_textbox.Text, Convert.ToInt32(Limits_textbox.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
+        }
+
+        private void Clear_Button_Click(object sender, RoutedEventArgs e)
+        {
+            ProxyServers.Clear();
+            Proxys_datagrid.ItemsSource = ProxyServers.Servers;
+        }
+        public void DeleteProxy()
+        {
+            ProxyServer ps = Proxys_datagrid.SelectedItem as ProxyServer;
+            if (ps != null)
+                ProxyServers.Delete(ps);
+        }
+        public void SaveProxys()
+        {
+            if (ProxyServers.WriteServers())
+                MessageBox.Show("Changes saved.");
         }
     }
 }
