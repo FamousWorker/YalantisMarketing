@@ -73,5 +73,42 @@ namespace YalantisMarketing
         {
             DataSync_tab_control.SyncData();
         }
+
+        private void Rank_Start_button_Click(object sender, RoutedEventArgs e)
+        {
+            RankParser_tab_control.Startarsing(new Action(SetEnd));
+            Rank_Cancel_button.IsEnabled = true;
+            Rank_Start_button.Visibility = Visibility.Collapsed;
+            Rank_Pause_button.Visibility = Visibility.Visible;
+        }
+        void SetEnd()
+        {
+            Rank_Pause_button.Visibility = Visibility.Collapsed;
+            Rank_Continue_button.Visibility = Visibility.Collapsed;
+            Rank_Start_button.Visibility = Visibility.Visible;
+            Rank_Cancel_button.IsEnabled = false;
+        }
+        private void Rank_Pause_button_Click(object sender, RoutedEventArgs e)
+        {
+            RankParser_tab_control.Pause();
+            Rank_Continue_button.Visibility = Visibility.Visible;
+            Rank_Pause_button.Visibility = Visibility.Collapsed;
+        }
+
+        private void Rank_Continue_button_Click(object sender, RoutedEventArgs e)
+        {
+            RankParser_tab_control.Continue();
+            Rank_Pause_button.Visibility = Visibility.Visible;
+            Rank_Continue_button.Visibility = Visibility.Collapsed;
+        }
+
+        private void Rank_Cancel_button_Click(object sender, RoutedEventArgs e)
+        {
+            RankParser_tab_control.Cancel();
+            Rank_Pause_button.Visibility = Visibility.Collapsed;
+            Rank_Continue_button.Visibility = Visibility.Collapsed;
+            Rank_Start_button.Visibility = Visibility.Visible ;
+            Rank_Cancel_button.IsEnabled = false;
+        }
     }
 }

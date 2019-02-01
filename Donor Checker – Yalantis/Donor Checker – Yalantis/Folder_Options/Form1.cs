@@ -20,7 +20,6 @@ namespace Folder_Options
         public Form1()
         {
             InitializeComponent();
-            Source_comboBox.SelectedIndex = 1;
             parserequester = new SpyMetricsRequester();
             WhoisSource_comboBox.SelectedIndex = 1;
             whoisrequester = new UkraineRequester();
@@ -38,7 +37,7 @@ namespace Folder_Options
             {
                 case "Start":
                     bool write_headers = true;
-                    if(Source_comboBox.SelectedIndex == 0 )
+                    if(radioButton3.Checked)
                     {
                         if ((!Da_pa_checkbox.Checked && !Cf_tf_checkbox.Checked))
                         {
@@ -119,7 +118,7 @@ namespace Folder_Options
             CsvSynchronier csvSynchronier = new CsvSynchronier();
             csvSynchronier.StartSynch(SavePath_textBox.Text, Example_textBox.Text,
                 Selector_1_comboBox.SelectedIndex, Selector_2_comboBox.SelectedIndex, Selector_3_comboBox.SelectedIndex,
-                Selector_4_comboBox.SelectedIndex, Selector_5_comboBox.SelectedIndex, Selector_6_comboBox.SelectedIndex);
+                Selector_4_comboBox.SelectedIndex, Selector_5_comboBox.SelectedIndex, Selector_6_comboBox.SelectedIndex, Selector_7_comboBox.SelectedIndex);
         }
 
         private void check_button_Click(object sender, EventArgs e)
@@ -312,18 +311,7 @@ namespace Folder_Options
         {
             switch (Proxy_comboBox.SelectedIndex)
             {
-                case 0:
-                    ProxyHost_textbox.Enabled = false;
-                    ProxyHost_textbox.Text = "";
-                    ProxyPort_textbox.Enabled = false;
-                    ProxyPort_textbox.Text = "";
-                    break;
-                case 1:
-                    ProxyHost_textbox.Enabled = true;
-                    ProxyPort_textbox.Enabled = true;
-                    break;
-                default:
-                    break;
+           
             }
         }
         private void Source_comboBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -339,23 +327,6 @@ namespace Folder_Options
             if (Char.IsDigit(e.KeyChar)) return;
             else e.Handled = true;
         }
-        private void Source_comboBox_DropDownClosed(object sender, EventArgs e)
-        {
-            switch (Source_comboBox.SelectedIndex)
-            {
-                case 0:
-                    parserequester = new BaseRequester();
-                    break;
-                case 1:
-                    parserequester = new SpyMetricsRequester();
-                    break;
-                case 2:
-                    parserequester = new AlexaRequester();
-                    break;
-                default:
-                    break;
-            }
-        }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -365,6 +336,27 @@ namespace Folder_Options
                     item.Abort();
             }
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton2.Checked) parserequester = new AlexaRequester();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton1.Checked == true) parserequester = new SpyMetricsRequester();
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true) parserequester = new BaseRequester();
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void load_local_combobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (load_local_combobox.SelectedIndex)

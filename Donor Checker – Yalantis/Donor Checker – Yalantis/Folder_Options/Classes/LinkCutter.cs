@@ -55,19 +55,20 @@ namespace Folder_Options.Classes
             {
                 if (item == string.Empty) continue;
                 string addetstring = item;
-                if (addetstring.Contains("https://"))
+                if (addetstring.Substring(0, 8) == "https://")
                 {
                     addetstring = addetstring.Remove(0, 8);
                 }
-                if (addetstring.Contains("http://"))
+                if (addetstring.Substring(0, 7) == "http://")
                 {
                     addetstring = addetstring.Remove(0, 7);
                 }
-                if (addetstring.Contains("www."))
+                if (addetstring.Substring(0, 4) == "www.")
                 {
                     addetstring = addetstring.Remove(0, 4);
                 }
-                addetstring = addetstring.Remove(addetstring.IndexOf('/'));
+                if (addetstring.Contains(@"/"))
+                    addetstring = addetstring.Remove(addetstring.IndexOf('/'));
                 result.Add(addetstring);
             }
         }

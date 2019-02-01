@@ -28,15 +28,11 @@
                 <CheckBox x:Name="Dr_checkbox" IsEnabled="False" Content="DR" Grid.Row="1" Margin="4" Grid.Column="2"></CheckBox>
             </Grid>
             <GroupBox Header="Source">
-                <ListBox x:Name="Source_listbox">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <RadioButton Content="{Binding name}"></RadioButton>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Click="Metrics_radio_button_click" x:Name="Metrics_radio_button" Content="Metrics" Margin="4,4,4,0"></RadioButton>
+                    <RadioButton Click="SimilarWeb_radio_button_click" Content="SimilarWeb" Margin="4,4,4,0"></RadioButton>
+                    <RadioButton Click="Alexa_radio_button_click" Content="Alexa" Margin="4,4,4,0"></RadioButton>
+                </StackPanel>
             </GroupBox>
         </StackPanel>
         <elements:ProgressPanel x:Name="Progress_panel" ></elements:ProgressPanel>

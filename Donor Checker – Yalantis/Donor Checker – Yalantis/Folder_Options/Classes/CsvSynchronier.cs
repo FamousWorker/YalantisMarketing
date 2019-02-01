@@ -12,10 +12,10 @@ namespace Folder_Options.Classes
     {
         string fileresultpath = "sync_result.csv";
         public void StartSynch(string savefilepath, string examplefilepath, 
-            int index1, int index2, int index3, int index4, int index5, int index6)
+            int index1, int index2, int index3, int index4, int index5, int index6, int index7)
         {
             List<string[]> result =  Synch(getSaveLines(savefilepath), getExampleLines(examplefilepath),
-               index1, index2, index3, index4, index5, index6);
+               index1, index2, index3, index4, index5, index6, index7);
             WriteResult(result);
         }
         private void WriteResult(List<string[]> result)
@@ -30,7 +30,7 @@ namespace Folder_Options.Classes
                         string[] wrapped = new string[result.Count];
                         foreach (var item in result)
                         {
-                            string line  = string.Join(";", item[0], item[1], item[2], item[3], item[4], item[5], item[6]);
+                            string line  = string.Join(";", item[0], item[1], item[2], item[3], item[4], item[5], item[6],item[7]);
                             writer.WriteLine(line);
                         }
                         writer.Flush();
@@ -49,7 +49,7 @@ namespace Folder_Options.Classes
         }
 
         List<string[]> Synch(List<string[]> saves, List<string[]> examples, 
-            int index1, int index2, int index3, int index4, int index5, int index6)
+            int index1, int index2, int index3, int index4, int index5, int index6, int index7)
         {
             List<string[]> result = saves;
             foreach (var item in saves)
@@ -69,6 +69,8 @@ namespace Folder_Options.Classes
                     item[5] = examp[index5];
                 if (examp.Length >= index6 + 1 && index6 != 0)
                     item[6] = examp[index6];
+                if (examp.Length >= index7 + 1 && index7 != 0)
+                    item[7] = examp[index7];
             }
             return result;
         }
@@ -81,7 +83,7 @@ namespace Folder_Options.Classes
                 string[] Lines = File.ReadAllLines(filepath);
                 foreach (var item in Lines)
                 {
-                    string[] resultline = new string[7];
+                    string[] resultline = new string[8];
                     resultline[0] = item;
                     result.Add(resultline);
                 }

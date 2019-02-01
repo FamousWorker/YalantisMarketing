@@ -40,6 +40,7 @@
             this.Cutter_textbox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Selector_7_comboBox = new System.Windows.Forms.ComboBox();
             this.Selector_5_comboBox = new System.Windows.Forms.ComboBox();
             this.Selector_1_comboBox = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,7 +52,7 @@
             this.Selector_2_comboBox = new System.Windows.Forms.ComboBox();
             this.Selector_6_comboBox = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.Source_comboBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Progress_Label = new System.Windows.Forms.Label();
             this.TimeLeft_label = new System.Windows.Forms.Label();
@@ -60,15 +61,10 @@
             this.Streams_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Time_Out_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label = new System.Windows.Forms.Label();
-            this.ProxyPort_textbox = new System.Windows.Forms.TextBox();
-            this.ProxyHost_textbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Proxy_comboBox = new System.Windows.Forms.ComboBox();
             this.parsing_progressBar = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Sourcelabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ParseFilePath_textBox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -94,8 +90,23 @@
             this.Cutter_button = new System.Windows.Forms.Button();
             this.WhoisStart_button = new System.Windows.Forms.Button();
             this.WhoisCancel_button = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LimitsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -109,6 +120,9 @@
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WhoisStreams_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Whois_TimeOut_numericUpDown)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -117,11 +131,12 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(7, 7);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(300, 235);
+            this.tabControl1.Size = new System.Drawing.Size(300, 248);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_TabIndexChanged);
             // 
@@ -135,7 +150,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(292, 209);
+            this.tabPage1.Size = new System.Drawing.Size(292, 222);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Outreach";
             // 
@@ -187,7 +202,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(292, 209);
+            this.tabPage2.Size = new System.Drawing.Size(292, 222);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Data Sync";
             // 
@@ -221,7 +236,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.Selector_7_comboBox);
             this.groupBox1.Controls.Add(this.Selector_5_comboBox);
             this.groupBox1.Controls.Add(this.Selector_1_comboBox);
             this.groupBox1.Controls.Add(this.button2);
@@ -238,6 +253,31 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data sync / Select a file (*.csv)";
+            // 
+            // Selector_7_comboBox
+            // 
+            this.Selector_7_comboBox.FormattingEnabled = true;
+            this.Selector_7_comboBox.Items.AddRange(new object[] {
+            "",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P"});
+            this.Selector_7_comboBox.Location = new System.Drawing.Point(247, 73);
+            this.Selector_7_comboBox.Name = "Selector_7_comboBox";
+            this.Selector_7_comboBox.Size = new System.Drawing.Size(32, 21);
+            this.Selector_7_comboBox.TabIndex = 13;
             // 
             // Selector_5_comboBox
             // 
@@ -426,45 +466,36 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Window;
+            this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.Source_comboBox);
             this.tabPage3.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage3.Controls.Add(this.checkBox1);
             this.tabPage3.Controls.Add(this.Da_pa_checkbox);
             this.tabPage3.Controls.Add(this.Cf_tf_checkbox);
             this.tabPage3.Controls.Add(this.Streams_numericUpDown);
             this.tabPage3.Controls.Add(this.Time_Out_numericUpDown);
             this.tabPage3.Controls.Add(this.label);
-            this.tabPage3.Controls.Add(this.ProxyPort_textbox);
-            this.tabPage3.Controls.Add(this.ProxyHost_textbox);
-            this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.Proxy_comboBox);
             this.tabPage3.Controls.Add(this.parsing_progressBar);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.Sourcelabel);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.ParseFilePath_textBox);
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(292, 209);
+            this.tabPage3.Size = new System.Drawing.Size(292, 222);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Rank Parser";
             // 
-            // Source_comboBox
+            // label6
             // 
-            this.Source_comboBox.FormattingEnabled = true;
-            this.Source_comboBox.Items.AddRange(new object[] {
-            "Metrics",
-            "SimilarWeb",
-            "Alexa"});
-            this.Source_comboBox.Location = new System.Drawing.Point(202, 83);
-            this.Source_comboBox.Name = "Source_comboBox";
-            this.Source_comboBox.Size = new System.Drawing.Size(80, 21);
-            this.Source_comboBox.TabIndex = 75;
-            this.Source_comboBox.DropDownClosed += new System.EventHandler(this.Source_comboBox_DropDownClosed);
-            this.Source_comboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Source_comboBox_KeyPress);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.TabIndex = 76;
+            this.label6.Text = "Select a file (*.csv)";
             // 
             // tableLayoutPanel1
             // 
@@ -505,7 +536,7 @@
             // Da_pa_checkbox
             // 
             this.Da_pa_checkbox.AutoSize = true;
-            this.Da_pa_checkbox.Location = new System.Drawing.Point(202, 127);
+            this.Da_pa_checkbox.Location = new System.Drawing.Point(74, 122);
             this.Da_pa_checkbox.Name = "Da_pa_checkbox";
             this.Da_pa_checkbox.Size = new System.Drawing.Size(60, 17);
             this.Da_pa_checkbox.TabIndex = 72;
@@ -515,7 +546,7 @@
             // Cf_tf_checkbox
             // 
             this.Cf_tf_checkbox.AutoSize = true;
-            this.Cf_tf_checkbox.Location = new System.Drawing.Point(202, 109);
+            this.Cf_tf_checkbox.Location = new System.Drawing.Point(11, 122);
             this.Cf_tf_checkbox.Name = "Cf_tf_checkbox";
             this.Cf_tf_checkbox.Size = new System.Drawing.Size(57, 17);
             this.Cf_tf_checkbox.TabIndex = 72;
@@ -524,7 +555,7 @@
             // 
             // Streams_numericUpDown
             // 
-            this.Streams_numericUpDown.Location = new System.Drawing.Point(81, 83);
+            this.Streams_numericUpDown.Location = new System.Drawing.Point(77, 83);
             this.Streams_numericUpDown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -536,7 +567,7 @@
             0,
             0});
             this.Streams_numericUpDown.Name = "Streams_numericUpDown";
-            this.Streams_numericUpDown.Size = new System.Drawing.Size(35, 20);
+            this.Streams_numericUpDown.Size = new System.Drawing.Size(39, 20);
             this.Streams_numericUpDown.TabIndex = 69;
             this.Streams_numericUpDown.Value = new decimal(new int[] {
             1,
@@ -570,50 +601,13 @@
             this.label.TabIndex = 67;
             this.label.Text = "Time left:   ";
             // 
-            // ProxyPort_textbox
-            // 
-            this.ProxyPort_textbox.Enabled = false;
-            this.ProxyPort_textbox.Location = new System.Drawing.Point(133, 124);
-            this.ProxyPort_textbox.Name = "ProxyPort_textbox";
-            this.ProxyPort_textbox.Size = new System.Drawing.Size(45, 20);
-            this.ProxyPort_textbox.TabIndex = 64;
-            this.ProxyPort_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ProxyPort_textbox_KeyPress);
-            // 
-            // ProxyHost_textbox
-            // 
-            this.ProxyHost_textbox.Enabled = false;
-            this.ProxyHost_textbox.Location = new System.Drawing.Point(14, 124);
-            this.ProxyHost_textbox.Name = "ProxyHost_textbox";
-            this.ProxyHost_textbox.Size = new System.Drawing.Size(102, 20);
-            this.ProxyHost_textbox.TabIndex = 65;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(134, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "Port";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Server";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Proxy_comboBox
             // 
             this.Proxy_comboBox.FormattingEnabled = true;
             this.Proxy_comboBox.Items.AddRange(new object[] {
             "Off",
             "On"});
-            this.Proxy_comboBox.Location = new System.Drawing.Point(133, 82);
+            this.Proxy_comboBox.Location = new System.Drawing.Point(133, 83);
             this.Proxy_comboBox.Name = "Proxy_comboBox";
             this.Proxy_comboBox.Size = new System.Drawing.Size(40, 21);
             this.Proxy_comboBox.TabIndex = 61;
@@ -646,15 +640,6 @@
             this.label2.TabIndex = 57;
             this.label2.Text = "Time-out";
             // 
-            // Sourcelabel
-            // 
-            this.Sourcelabel.AutoSize = true;
-            this.Sourcelabel.Location = new System.Drawing.Point(199, 60);
-            this.Sourcelabel.Name = "Sourcelabel";
-            this.Sourcelabel.Size = new System.Drawing.Size(41, 13);
-            this.Sourcelabel.TabIndex = 56;
-            this.Sourcelabel.Text = "Source";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -683,6 +668,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.checkBox6);
+            this.tabPage4.Controls.Add(this.checkBox5);
+            this.tabPage4.Controls.Add(this.checkBox4);
+            this.tabPage4.Controls.Add(this.checkBox3);
+            this.tabPage4.Controls.Add(this.checkBox2);
             this.tabPage4.Controls.Add(this.WhoisSource_comboBox);
             this.tabPage4.Controls.Add(this.tableLayoutPanel2);
             this.tabPage4.Controls.Add(this.WhoisStreams_numericUpDown);
@@ -691,15 +682,18 @@
             this.tabPage4.Controls.Add(this.Whois_progressBar);
             this.tabPage4.Controls.Add(this.label11);
             this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.Whois_textBox);
             this.tabPage4.Controls.Add(this.button6);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(292, 209);
+            this.tabPage4.Size = new System.Drawing.Size(292, 222);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Whois";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // WhoisSource_comboBox
             // 
@@ -707,9 +701,9 @@
             this.WhoisSource_comboBox.Items.AddRange(new object[] {
             "TheHost",
             "Ukraine"});
-            this.WhoisSource_comboBox.Location = new System.Drawing.Point(7, 78);
+            this.WhoisSource_comboBox.Location = new System.Drawing.Point(139, 121);
             this.WhoisSource_comboBox.Name = "WhoisSource_comboBox";
-            this.WhoisSource_comboBox.Size = new System.Drawing.Size(80, 21);
+            this.WhoisSource_comboBox.Size = new System.Drawing.Size(86, 21);
             this.WhoisSource_comboBox.TabIndex = 94;
             this.WhoisSource_comboBox.DropDownClosed += new System.EventHandler(this.WhoisSource_comboBox_DropDownClosed);
             this.WhoisSource_comboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Source_comboBox_KeyPress);
@@ -718,23 +712,23 @@
             // 
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.64151F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.05556F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.35849F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.94444F));
             this.tableLayoutPanel2.Controls.Add(this.WhoisCountLeft_label, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.WhoisTimeLeft_label, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(69, 131);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(62, 170);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(216, 13);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(223, 13);
             this.tableLayoutPanel2.TabIndex = 93;
             // 
             // WhoisCountLeft_label
             // 
             this.WhoisCountLeft_label.AutoSize = true;
             this.WhoisCountLeft_label.Dock = System.Windows.Forms.DockStyle.Right;
-            this.WhoisCountLeft_label.Location = new System.Drawing.Point(189, 0);
+            this.WhoisCountLeft_label.Location = new System.Drawing.Point(196, 0);
             this.WhoisCountLeft_label.Name = "WhoisCountLeft_label";
             this.WhoisCountLeft_label.Size = new System.Drawing.Size(24, 13);
             this.WhoisCountLeft_label.TabIndex = 66;
@@ -744,7 +738,7 @@
             // 
             this.WhoisTimeLeft_label.AutoSize = true;
             this.WhoisTimeLeft_label.Dock = System.Windows.Forms.DockStyle.Right;
-            this.WhoisTimeLeft_label.Location = new System.Drawing.Point(13, 0);
+            this.WhoisTimeLeft_label.Location = new System.Drawing.Point(5, 0);
             this.WhoisTimeLeft_label.Name = "WhoisTimeLeft_label";
             this.WhoisTimeLeft_label.Size = new System.Drawing.Size(32, 13);
             this.WhoisTimeLeft_label.TabIndex = 73;
@@ -752,7 +746,7 @@
             // 
             // WhoisStreams_numericUpDown
             // 
-            this.WhoisStreams_numericUpDown.Location = new System.Drawing.Point(243, 79);
+            this.WhoisStreams_numericUpDown.Location = new System.Drawing.Point(236, 79);
             this.WhoisStreams_numericUpDown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -764,7 +758,7 @@
             0,
             0});
             this.WhoisStreams_numericUpDown.Name = "WhoisStreams_numericUpDown";
-            this.WhoisStreams_numericUpDown.Size = new System.Drawing.Size(35, 20);
+            this.WhoisStreams_numericUpDown.Size = new System.Drawing.Size(42, 20);
             this.WhoisStreams_numericUpDown.TabIndex = 90;
             this.WhoisStreams_numericUpDown.Value = new decimal(new int[] {
             1,
@@ -774,14 +768,14 @@
             // 
             // Whois_TimeOut_numericUpDown
             // 
-            this.Whois_TimeOut_numericUpDown.Location = new System.Drawing.Point(176, 78);
+            this.Whois_TimeOut_numericUpDown.Location = new System.Drawing.Point(139, 78);
             this.Whois_TimeOut_numericUpDown.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.Whois_TimeOut_numericUpDown.Name = "Whois_TimeOut_numericUpDown";
-            this.Whois_TimeOut_numericUpDown.Size = new System.Drawing.Size(35, 20);
+            this.Whois_TimeOut_numericUpDown.Size = new System.Drawing.Size(45, 20);
             this.Whois_TimeOut_numericUpDown.TabIndex = 89;
             this.Whois_TimeOut_numericUpDown.Value = new decimal(new int[] {
             5,
@@ -792,7 +786,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 131);
+            this.label8.Location = new System.Drawing.Point(10, 170);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 88;
@@ -800,7 +794,7 @@
             // 
             // Whois_progressBar
             // 
-            this.Whois_progressBar.Location = new System.Drawing.Point(7, 148);
+            this.Whois_progressBar.Location = new System.Drawing.Point(7, 187);
             this.Whois_progressBar.Name = "Whois_progressBar";
             this.Whois_progressBar.Size = new System.Drawing.Size(271, 23);
             this.Whois_progressBar.TabIndex = 82;
@@ -817,7 +811,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(162, 57);
+            this.label12.Location = new System.Drawing.Point(135, 57);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(48, 13);
             this.label12.TabIndex = 80;
@@ -826,7 +820,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 55);
+            this.label13.Location = new System.Drawing.Point(136, 102);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 13);
             this.label13.TabIndex = 79;
@@ -856,7 +850,7 @@
             // CancelButton
             // 
             this.CancelButton.Enabled = false;
-            this.CancelButton.Location = new System.Drawing.Point(176, 248);
+            this.CancelButton.Location = new System.Drawing.Point(176, 258);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(60, 23);
             this.CancelButton.TabIndex = 54;
@@ -867,7 +861,7 @@
             // 
             // ParseButton
             // 
-            this.ParseButton.Location = new System.Drawing.Point(87, 248);
+            this.ParseButton.Location = new System.Drawing.Point(177, 258);
             this.ParseButton.Name = "ParseButton";
             this.ParseButton.Size = new System.Drawing.Size(60, 23);
             this.ParseButton.TabIndex = 55;
@@ -878,7 +872,7 @@
             // 
             // Sync_button
             // 
-            this.Sync_button.Location = new System.Drawing.Point(243, 248);
+            this.Sync_button.Location = new System.Drawing.Point(243, 258);
             this.Sync_button.Name = "Sync_button";
             this.Sync_button.Size = new System.Drawing.Size(60, 23);
             this.Sync_button.TabIndex = 56;
@@ -889,7 +883,7 @@
             // 
             // Check_button
             // 
-            this.Check_button.Location = new System.Drawing.Point(76, 248);
+            this.Check_button.Location = new System.Drawing.Point(243, 258);
             this.Check_button.Name = "Check_button";
             this.Check_button.Size = new System.Drawing.Size(60, 23);
             this.Check_button.TabIndex = 57;
@@ -899,7 +893,7 @@
             // 
             // Cutter_button
             // 
-            this.Cutter_button.Location = new System.Drawing.Point(177, 248);
+            this.Cutter_button.Location = new System.Drawing.Point(177, 258);
             this.Cutter_button.Name = "Cutter_button";
             this.Cutter_button.Size = new System.Drawing.Size(60, 23);
             this.Cutter_button.TabIndex = 56;
@@ -910,7 +904,7 @@
             // 
             // WhoisStart_button
             // 
-            this.WhoisStart_button.Location = new System.Drawing.Point(42, 248);
+            this.WhoisStart_button.Location = new System.Drawing.Point(177, 258);
             this.WhoisStart_button.Name = "WhoisStart_button";
             this.WhoisStart_button.Size = new System.Drawing.Size(60, 23);
             this.WhoisStart_button.TabIndex = 56;
@@ -922,7 +916,7 @@
             // WhoisCancel_button
             // 
             this.WhoisCancel_button.Enabled = false;
-            this.WhoisCancel_button.Location = new System.Drawing.Point(156, 248);
+            this.WhoisCancel_button.Location = new System.Drawing.Point(243, 258);
             this.WhoisCancel_button.Name = "WhoisCancel_button";
             this.WhoisCancel_button.Size = new System.Drawing.Size(60, 23);
             this.WhoisCancel_button.TabIndex = 56;
@@ -931,45 +925,191 @@
             this.WhoisCancel_button.Visible = false;
             this.WhoisCancel_button.Click += new System.EventHandler(this.WhoisCansel_button_Click_1);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Location = new System.Drawing.Point(179, 60);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(103, 84);
+            this.groupBox3.TabIndex = 77;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Source";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(7, 20);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(78, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "SimilarWeb";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 40);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(51, 17);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Alexa";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(6, 61);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(59, 17);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Metrics";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
+            this.checkBox1.Location = new System.Drawing.Point(133, 121);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(42, 17);
+            this.checkBox1.TabIndex = 72;
+            this.checkBox1.Text = "DR";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P"});
-            this.comboBox1.Location = new System.Drawing.Point(247, 73);
+            "Off",
+            "On"});
+            this.comboBox1.Location = new System.Drawing.Point(238, 121);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(32, 21);
-            this.comboBox1.TabIndex = 13;
+            this.comboBox1.Size = new System.Drawing.Size(40, 21);
+            this.comboBox1.TabIndex = 61;
+            this.comboBox1.Text = "Off";
+            this.comboBox1.DropDownClosed += new System.EventHandler(this.Proxy_comboBox_SelectedIndexChanged);
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Proxy_comboBox_KeyPress);
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
-            this.label6.TabIndex = 76;
-            this.label6.Text = "Select a file (*.csv)";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(233, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 79;
+            this.label4.Text = "Proxy";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(9, 57);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(91, 17);
+            this.checkBox2.TabIndex = 95;
+            this.checkBox2.Text = "Creation Date";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(9, 79);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(77, 17);
+            this.checkBox3.TabIndex = 95;
+            this.checkBox3.Text = "ExpiryDate";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(9, 99);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(84, 17);
+            this.checkBox4.TabIndex = 95;
+            this.checkBox4.Text = "Domain Age";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(9, 122);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(102, 17);
+            this.checkBox5.TabIndex = 95;
+            this.checkBox5.Text = "Name server #1";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(9, 145);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(102, 17);
+            this.checkBox6.TabIndex = 95;
+            this.checkBox6.Text = "Name server #2";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 13);
+            this.label5.TabIndex = 96;
+            this.label5.Text = "Select a file (*.csv)";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.dataGridView1);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(292, 222);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Lan";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IpColumn,
+            this.LimitsColumn});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(163, 190);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // IpColumn
+            // 
+            this.IpColumn.Frozen = true;
+            this.IpColumn.HeaderText = "IP";
+            this.IpColumn.Name = "IpColumn";
+            this.IpColumn.ReadOnly = true;
+            // 
+            // LimitsColumn
+            // 
+            this.LimitsColumn.Frozen = true;
+            this.LimitsColumn.HeaderText = "Limits";
+            this.LimitsColumn.Name = "LimitsColumn";
+            this.LimitsColumn.ReadOnly = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 281);
+            this.ClientSize = new System.Drawing.Size(314, 293);
             this.Controls.Add(this.Check_button);
             this.Controls.Add(this.WhoisCancel_button);
             this.Controls.Add(this.WhoisStart_button);
@@ -1003,6 +1143,10 @@
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WhoisStreams_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Whois_TimeOut_numericUpDown)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1031,10 +1175,6 @@
         private System.Windows.Forms.NumericUpDown Time_Out_numericUpDown;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label Progress_Label;
-        private System.Windows.Forms.TextBox ProxyPort_textbox;
-        private System.Windows.Forms.TextBox ProxyHost_textbox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox Proxy_comboBox;
         private System.Windows.Forms.ProgressBar parsing_progressBar;
         private System.Windows.Forms.Label label3;
@@ -1056,8 +1196,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Cutter_button;
         private System.Windows.Forms.ComboBox load_local_combobox;
-        private System.Windows.Forms.ComboBox Source_comboBox;
-        private System.Windows.Forms.Label Sourcelabel;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ComboBox WhoisSource_comboBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -1074,8 +1212,25 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button WhoisStart_button;
         private System.Windows.Forms.Button WhoisCancel_button;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Selector_7_comboBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IpColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LimitsColumn;
     }
 }
 

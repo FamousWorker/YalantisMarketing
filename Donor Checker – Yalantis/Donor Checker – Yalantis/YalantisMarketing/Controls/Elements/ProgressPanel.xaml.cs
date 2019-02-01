@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using YalantisMarketing.Classes;
+using YalantisMarketing.Classes.DataContexts;
 
 namespace YalantisMarketing.Controls.Elements
 {
@@ -20,9 +22,26 @@ namespace YalantisMarketing.Controls.Elements
     /// </summary>
     public partial class ProgressPanel : UserControl
     {
+        public ProgressPanelDataContex _progressPanelDataContex;
         public ProgressPanel()
         {
             InitializeComponent();
+            
+            _progressPanelDataContex = new ProgressPanelDataContex();
+            this.DataContext = _progressPanelDataContex;
+        }
+        public void Init(int maxvalue, string time)
+        {
+            _progressPanelDataContex.Files = "0/" + maxvalue.ToString();
+            _progressPanelDataContex.CurrentValue = 0;
+            _progressPanelDataContex.MaxValue = maxvalue;
+            _progressPanelDataContex.Time = time;
+        }
+        public void Update(string time, int files)
+        {
+            _progressPanelDataContex.Files = (_progressPanelDataContex.MaxValue - files) + "/" + _progressPanelDataContex.MaxValue.ToString();
+            _progressPanelDataContex.Time = time;
+            _progressPanelDataContex.CurrentValue++;
         }
     }
 }

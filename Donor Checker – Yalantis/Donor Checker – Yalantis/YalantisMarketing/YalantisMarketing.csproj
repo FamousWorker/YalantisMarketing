@@ -73,12 +73,24 @@
     <Compile Include="Classes\CsvReadWrite\TextFromListGetter.cs" />
     <Compile Include="Classes\DataContexts\DataSyncDataContext.cs" />
     <Compile Include="Classes\DataContexts\OutReachDataContex.cs" />
+    <Compile Include="Classes\DataContexts\ProgressPanelDataContex.cs" />
+    <Compile Include="Classes\DataContexts\RankParserDataContex.cs" />
     <Compile Include="Classes\DataSyncPackage\DataSyncher.cs" />
     <Compile Include="Classes\DataSyncPackage\LinkCutter.cs" />
+    <Compile Include="Classes\Delegates.cs" />
     <Compile Include="Classes\OutreachPackage\IReader.cs" />
     <Compile Include="Classes\OutreachPackage\LocalReader.cs" />
     <Compile Include="Classes\OutreachPackage\SearchResult.cs" />
     <Compile Include="Classes\OutreachPackage\WebReader.cs" />
+    <Compile Include="Classes\Parsing\AlexaResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\AParseResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\EmptyResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\IWebLoader.cs" />
+    <Compile Include="Classes\Parsing\MetricsResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\SimilarWebResultBuilder.cs" />
+    <Compile Include="Classes\Parsing\SimpleWebLoader.cs" />
+    <Compile Include="Classes\PropertyChancher.cs" />
+    <Compile Include="Classes\RankParserPackage\RankParserParams.cs" />
     <Compile Include="Windows\SearchResultWindow.xaml.cs">
       <DependentUpon>SearchResultWindow.xaml</DependentUpon>
     </Compile>
@@ -195,9 +207,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Parsing\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\found.png" />
   </ItemGroup>

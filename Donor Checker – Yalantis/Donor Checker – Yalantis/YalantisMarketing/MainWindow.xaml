@@ -24,12 +24,12 @@
                 <controls:DataSyncControl x:Name="DataSync_tab_control"></controls:DataSyncControl>
             </TabItem>
             <TabItem Header="RankParser">
-                <controls:RankParserControl></controls:RankParserControl>
+                <controls:RankParserControl x:Name="RankParser_tab_control"></controls:RankParserControl>
             </TabItem>
             <TabItem Header="Whois">
-                <controls:WhoisControl></controls:WhoisControl>
+                <controls:WhoisControl x:Name="Whois_tab_control"></controls:WhoisControl>
             </TabItem>
-            <TabItem Header="Lan">
+            <TabItem Header="Lan" x:Name="Lan_tab_control">
                 <controls:LanControl></controls:LanControl>
             </TabItem>
         </TabControl>
@@ -41,14 +41,16 @@
             <Button x:Name="Sync_button" Click="Sync_button_Click" Content="Sync" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
         </StackPanel>
         <StackPanel x:Name="Rank_parser_panel" Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" >
-            <Button x:Name="Rank_Start_button" Content="Start" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
-            <Button x:Name="Rank_Cancel_button" Content="Cancel" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+            <Button x:Name="Rank_Start_button" Click="Rank_Start_button_Click" Content="Start" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+            <Button x:Name="Rank_Pause_button" Visibility="Collapsed" Click="Rank_Pause_button_Click" Content="Pause" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+            <Button x:Name="Rank_Continue_button" Visibility="Collapsed" Click="Rank_Continue_button_Click" Content="Continue" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+            <Button x:Name="Rank_Cancel_button" Click="Rank_Cancel_button_Click" IsEnabled="False" Content="Cancel" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
         </StackPanel>
-        <StackPanel x:Name="Whois_panel" Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" >
-            <Button x:Name="Whois_Start_button" Content="Start" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+        <StackPanel x:Name="Whois_panel" Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Right" >
+            <Button x:Name="Whois_Start_button" Content="Start"  Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
             <Button x:Name="Whois_Cancel_button" Content="Cancel" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
         </StackPanel>
-        <Grid x:Name="Lan_panel"  Grid.Row="4" >
+        <Grid x:Name="Lan_panel"  Grid.Row="5" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
