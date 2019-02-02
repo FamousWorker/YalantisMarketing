@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/not_found.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo_ico.ico")]
 
 

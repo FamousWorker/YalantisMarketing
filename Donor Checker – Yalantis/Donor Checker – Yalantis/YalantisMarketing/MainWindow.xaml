@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:YalantisMarketing"
         xmlns:controls ="clr-namespace:YalantisMarketing.Controls"
         mc:Ignorable="d"
-        Title="Yalantis Marketing" Height="330" Width="350">
+        Title="Yalantis Marketing" Height="343.632" Width="340.344" WindowStartupLocation="CenterScreen">
     <Grid x:Name="Main_Grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -50,7 +50,7 @@
             <Button x:Name="Whois_Start_button" Click="Whois_Start_button_Click" Content="Start"  Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
             <Button x:Name="Whois_Pause_button" Visibility="Collapsed" Click="Whois_Pause_button_Click" Content="Pause" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
             <Button x:Name="Whois_Continue_button" Visibility="Collapsed" Click="Whois_Continue_button_Click" Content="Continue" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
-            <Button x:Name="Whois_Cancel_button" Click="Whois_Cancel_button_Click" Content="Cancel" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
+            <Button x:Name="Whois_Cancel_button" IsEnabled="False" Click="Whois_Cancel_button_Click" Content="Cancel" Width="60" Height="23" Margin="5" HorizontalAlignment="Right"></Button>
         </StackPanel>
         <Grid x:Name="Lan_panel"  Grid.Row="5" >
             <Grid.ColumnDefinitions>
@@ -60,7 +60,6 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="Delete_button" Click="Delete_button_Click" Content="Delete" Width="60" Height="23" Margin="5"  Grid.Column="0" HorizontalAlignment="Left"></Button>
             <Button x:Name="Save_button" Click="Save_button_Click" Content="Save" Width="60" Height="23" Margin="5"  Grid.Column="1" HorizontalAlignment="Right"></Button>
-            <Button x:Name="Cancel_lan_button" Content="Cancel" Width="60" Height="23" Margin="5"  Grid.Column="2" HorizontalAlignment="Right" VerticalContentAlignment="Center"/>
         </Grid>
     </Grid>
 </Window>

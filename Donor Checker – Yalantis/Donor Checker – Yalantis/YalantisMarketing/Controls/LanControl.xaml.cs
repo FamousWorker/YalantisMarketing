@@ -24,7 +24,7 @@ namespace YalantisMarketing.Controls
         public LanControl()
         {
             InitializeComponent();
-            ProxyServers.ServersInit();
+           
             Proxys_datagrid.ItemsSource = ProxyServers.Servers;
         }
 

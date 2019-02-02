@@ -43,7 +43,8 @@ namespace YalantisMarketing.Classes.Parsing
                 if (_webProxy != null) _webLoader.Proxy = _webProxy.Proxy;
             }
             html = _webLoader.GetHTML(domain);
-            if (html != null) _webProxy.Limits++;
+            if (html != null && _webProxy != null)
+                _webProxy.Limits++;
             return html;
         }
         protected void SetUrl(string url)

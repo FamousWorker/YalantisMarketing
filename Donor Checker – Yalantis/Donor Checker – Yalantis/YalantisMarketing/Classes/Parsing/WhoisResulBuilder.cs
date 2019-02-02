@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace YalantisMarketing.Classes.Parsing
 {
@@ -32,62 +34,81 @@ namespace YalantisMarketing.Classes.Parsing
                 {
                     doc.LoadHtml(html);
                     string result = domain;
-                        HtmlAgilityPack.HtmlNodeCollection htmlNodes =
-                      doc.DocumentNode.SelectNodes("//tr[@class=\'secondRow\']");
-                        if (htmlNodes != null & htmlNodes.Count > 1)
+                    string creationDate = "", expiryDate = "";
+                    if (CreationData)
+                    {
+                        result += ";";
+                        string s = "";
+                        var node = doc.DocumentNode.SelectSingleNode(@"//tr[@class='secondRow' and td/b='Creation Date']/td[2]");
+                        if (node != null) s = node.InnerText;
+                        if (s != "")
                         {
-                            foreach (HtmlAgilityPack.HtmlNode row in htmlNodes)
-                            {
-                            if (CreationData)
-                                if (row.SelectSingleNode("td[1]").InnerText.ToLower().Trim() == "creation data".Trim())
-                                {
-                                    string date = row.SelectSingleNode("td[2]").InnerText.Trim();
-                                    result += ";" + date.Substring(0, date.IndexOf('T'));
-                                }
-                            if (ServerName1)
-                                if (row.SelectSingleNode("td[1]").InnerText.ToLower().Trim() == "name server".Trim())
-                                {
-                                    string date = row.SelectSingleNode("td[2]").InnerText.Trim();
-                                    result += ";" + date;
-                                    ServerName1 = false;
-                                    continue;
-                                }
-                            if (ServerName2)
-                                if (row.SelectSingleNode("td[1]").InnerText.ToLower().Trim() == "name server".Trim())
-                                {
-                                    string date = row.SelectSingleNode("td[2]").InnerText.Trim();
-                                    result += ";" + date;
-                                    ServerName2 = false;
-                                    continue;
-                                }
-
+                            result += s.Substring(0, s.IndexOf('T'));
+                            creationDate =   s.Substring(0, s.IndexOf('T'));
                         }
-                        }
+                    }
                     if (ExpiryData)
                     {
-                        htmlNodes =
-                      doc.DocumentNode.SelectNodes("//tr[@class=\'firstRow\']");
-                        if (htmlNodes != null & htmlNodes.Count > 1)
+                        result += ";";
+                        string s = "";
+                        var node = doc.DocumentNode.SelectSingleNode(@"//tr[@class='firstRow' and td/b='Registrar Registration Expiration Date']/td[2]");
+                        if (node != null) s = node.InnerText;
+                        if (s != "")
                         {
-                            foreach (HtmlAgilityPack.HtmlNode row in htmlNodes)
+                            result += s.Substring(0, s.IndexOf('T'));
+                            expiryDate = s.Substring(0, s.IndexOf('T'));
+                        }
+                    }
+                    if (DomainAge)
+                    {
+                        result += ";";
+                        if(expiryDate != String.Empty && creationDate != String.Empty)
+                        {
+                            string[] ed = expiryDate.Split('-');
+                            string[] cd = creationDate.Split('-');
+                            try
                             {
-                                if (row.SelectSingleNode("td[1]").InnerText.ToLower().Trim() == "Registrar Registration Expiration Date".ToLower().Trim())
-                                {
-                                    string date = row.SelectSingleNode("td[2]").InnerText.Trim();
-                                    result += ";" + date.Substring(0, date.IndexOf('T'));
-                                }
+                                string age;
+                                int expiryDays = Convert.ToInt32(ed[0]) * 365 + Convert.ToInt32(ed[1]) * 12 + Convert.ToInt32(ed[2]);
+                                int creationDays = Convert.ToInt32(cd[0]) * 365 + Convert.ToInt32(cd[1]) * 12 + Convert.ToInt32(cd[2]);
+                                int ageDays = expiryDays - creationDays;
+                                int years, mounths, days;
+                                years = ageDays / 365;
+                                mounths = (ageDays % 365) / 12;
+                                days = (ageDays % 365) % 12;
+                                age = years.ToString() + "-" + mounths.ToString() + "-" + days.ToString();
+                                result += age;
+                            }
+                            catch (Exception)
+                            {
+
                             }
                         }
                     }
-                    if(DomainAge)
+
+                    if (ServerName1)
                     {
-                        result += "age";
+                        result += ";";
+                        string s = "";
+                        var node = doc.DocumentNode.SelectSingleNode(@"//tr[@class='secondRow' and td/b='Name Server']/td[2]");
+                        if (node != null) s = node.InnerText;
+                        if (s != "") result += s;
                     }
+                    if (ServerName2)
+                    {
+                        result += ";";
+                        string s = "";
+                        var node = doc.DocumentNode.SelectSingleNode(@"//tr[@class='firstRow' and td/b='Name Server']/td[2]");
+                        if (node != null) s = node.InnerText;
+                        if (s != "") result += s;
+                    }
+
                     return result;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 string result = domain;
                 if (CreationData) result += ";";
                 if (ExpiryData) result += ";";

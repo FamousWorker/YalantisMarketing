@@ -10,7 +10,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="Proxys_datagrid" VerticalScrollBarVisibility="Visible" IsReadOnly="True" ItemsSource="{Binding}" MinWidth="200"
+        <DataGrid x:Name="Proxys_datagrid" VerticalScrollBarVisibility="Visible" IsReadOnly="True" ItemsSource="{Binding}" MinWidth="170"
                   AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" CanUserDeleteRows="False" HorizontalContentAlignment="Stretch" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="IP Adress:" Binding="{Binding IPAdress}" Width="*"></DataGridTextColumn>
@@ -26,7 +26,7 @@
             </GroupBox>
             <StackPanel Orientation="Horizontal">
                 <GroupBox Header="Port:">
-                    <TextBox x:Name="Port_textbox"  Style="{StaticResource Element_base_style}"></TextBox>
+                    <TextBox x:Name="Port_textbox" MinWidth="40" Style="{StaticResource Element_base_style}"></TextBox>
                 </GroupBox>
                 <GroupBox Header="Limits:">
                     <TextBox x:Name="Limits_textbox"  Style="{StaticResource Element_base_style}"></TextBox>

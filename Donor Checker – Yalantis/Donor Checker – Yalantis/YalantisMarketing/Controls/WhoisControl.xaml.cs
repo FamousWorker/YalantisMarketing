@@ -26,6 +26,7 @@ namespace YalantisMarketing.Controls
         {
             InitializeComponent();
             _whoisDataContext = new WhoisDataContext();
+            SetEvents();
         }
         void SetEvents()
         {

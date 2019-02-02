@@ -18,7 +18,7 @@ namespace YalantisMarketing.Classes.DataContexts
         public event StartProgressPanel StartParsing;
         public event Action ParsingEnd;
 
-        AParseResultBuilder _parser;
+        WhoisResulBuilder _parser;
         ICsvReaderWriter _csvReaderWriter;
         string _savefilepath;
         int _timeout, _streamsCount;
@@ -28,6 +28,11 @@ namespace YalantisMarketing.Classes.DataContexts
         {
             _timeout = parametr.TimeOut;
             _streamsCount = parametr.ThreadCount;
+            _parser.CreationData = parametr.CreationDate;
+            _parser.ExpiryData = parametr.ExpiryDate;
+            _parser.DomainAge = parametr.DomainAge;
+            _parser.ServerName1 = parametr.ServerName1;
+            _parser.ServerName2 = parametr.ServerName2;
         }
         private string ParseDomain(string domainname)
         {
@@ -43,11 +48,6 @@ namespace YalantisMarketing.Classes.DataContexts
             _csvReaderWriter = new SimpleCsvReaderWriter();
             _parser = new WhoisResulBuilder();
             _savefilepath = "whois_result_" + DateTime.Today.ToShortDateString() + ".csv";
-        }
-        public void SetHostPro()
-        {
-            _parser = new AlexaResultBuilder();
-            _savefilepath = "alexa_result_" + DateTime.Today.ToShortDateString() + ".csv";
         }
        
         public void SetProxy()

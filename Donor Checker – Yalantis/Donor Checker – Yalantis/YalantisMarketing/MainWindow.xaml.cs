@@ -26,6 +26,7 @@ namespace YalantisMarketing
             InitializeComponent();
             HideButtons();
             Outreach_panel.Visibility = Visibility.Visible;
+            ProxyServers.ServersInit();
         }
         void HideButtons()
         {

@@ -15,11 +15,11 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Vertical">
-                <CheckBox x:Name="Creation_data_checkbox" Content="Creation Date" Style="{StaticResource Element_base_style}" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
-                <CheckBox x:Name="Expiry_data_checkbox" Content="Expiry Date" Style="{StaticResource Element_base_style}" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
-                <CheckBox x:Name="Domain_age_checkbox" Content="Domain Age" Style="{StaticResource Element_base_style}" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
-                <CheckBox x:Name="Server_name_1_checkbox" Content="Name Server #1" Style="{StaticResource Element_base_style}" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
-                <CheckBox x:Name="Server_name_2_checkbox" Content="Name Server #2" Style="{StaticResource Element_base_style}" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                <CheckBox x:Name="Creation_data_checkbox" Content="Creation Date" Margin="4,4,4,0" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                <CheckBox x:Name="Expiry_data_checkbox" Content="Expiry Date" Margin="4,4,4,0" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                <CheckBox x:Name="Domain_age_checkbox" Content="Domain Age" Margin="4,4,4,0" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                <CheckBox x:Name="Server_name_1_checkbox" Content="Name Server #1" Margin="4,4,4,0" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                <CheckBox x:Name="Server_name_2_checkbox" Content="Name Server #2" Margin="4,4,4,0" IsChecked="{Binding active, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
             </StackPanel>
             <Grid Grid.Column="1">
                 <Grid.ColumnDefinitions>
