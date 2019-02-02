@@ -81,7 +81,6 @@
     <Compile Include="Classes\DataContexts\RankParserDataContex.cs" />
     <Compile Include="Classes\DataContexts\WhoisDataContext.cs" />
     <Compile Include="Classes\DataSyncPackage\DataSyncher.cs" />
-    <Compile Include="Classes\DataSyncPackage\LinkCutter.cs" />
     <Compile Include="Classes\Delegates.cs" />
     <Compile Include="Classes\OutreachPackage\IReader.cs" />
     <Compile Include="Classes\OutreachPackage\LocalReader.cs" />

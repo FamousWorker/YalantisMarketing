@@ -54,11 +54,5 @@ namespace YalantisMarketing.Controls
                 MessageBox.Show("Done!");
         }
 
-        public void CutLinks()
-        {
-            if (Cutter_filebrowser.File_patch == string.Empty) { MessageBox.Show("Введите имя файла!"); return; }
-            if (_dataSyncDataContext.CutLinks(Cutter_filebrowser.File_patch))
-                MessageBox.Show("Done!");
-        }
     }
 }

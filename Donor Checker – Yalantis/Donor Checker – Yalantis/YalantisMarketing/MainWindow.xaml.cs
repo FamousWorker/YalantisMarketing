@@ -66,10 +66,6 @@ namespace YalantisMarketing
             Outreach_tab_control.CheckDomains();
         }
 
-        private void Cut_off_button_Click(object sender, RoutedEventArgs e)
-        {
-            DataSync_tab_control.CutLinks();
-        }
 
         private void Sync_button_Click(object sender, RoutedEventArgs e)
         {

@@ -24,7 +24,7 @@ namespace YalantisMarketing.Classes.Parsing
                 string html = GetHTML(_baseurl + domain);
                 if (html == null)
                 {
-                    result += ";-;;;;;;;;;;;;;;;;";
+                    result += ";-;;;;;;;;;;;;;;;;;";
                 }
                 else
                 {
@@ -34,13 +34,21 @@ namespace YalantisMarketing.Classes.Parsing
                     if (node != null)
                         result = node.InnerText.Trim().ToLower(); //url
                     else
-                        return result + ";-;;;;;;;;;;;;;;;;";
+                        return result + ";-;;;;;;;;;;;;;;;;;";
 
                     node = doc.DocumentNode.SelectSingleNode("//div[@id=\"worldRanking-item\"]//div[@class=\"rankValue\"]");
                     if (node != null)
                     {
                         var rg = new Regex(@"#(.*?)<");
                         result += ";" + rg.Match(node.InnerHtml.TrimEnd()).Groups[1].Value; //rank
+                    }
+                    else result += ";";
+
+                    node = doc.DocumentNode.SelectSingleNode("//div[@id=\"categoryRanking-item\"]//div[@class=\"rankValue\"]");
+                    if (node != null)
+                    {
+                        var rg = new Regex(@"#(.*?)<");
+                        result += ";" + rg.Match(node.InnerHtml.TrimEnd()).Groups[1].Value; // category rank
                     }
                     else result += ";";
 
@@ -83,14 +91,14 @@ namespace YalantisMarketing.Classes.Parsing
             catch (Exception ex)
             {
                 //MessageBox.Show(ex.ToString());
-                return domain + ";-;;;;;;;;;;;;;;;;";
+                return domain + ";-;;;;;;;;;;;;;;;;;";
             }
         }
 
         public override string BuildHeader()
         {
             return
-                ";World rank;Overall Visits;Time On Site;Pages per Visit;Bounce Rate;Organic Search;Country 1;%;Country 2;%;Country 3;%;Country 4;%;Country 5;%;";
+                ";World rank;Category rank;Overall Visits;Time On Site;Pages per Visit;Bounce Rate;Organic Search;Country 1;%;Country 2;%;Country 3;%;Country 4;%;Country 5;%;";
         }
     }
 }

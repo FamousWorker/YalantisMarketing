@@ -118,7 +118,7 @@ namespace YalantisMarketing.Classes.Parsing
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
                 return domain + ";-;;;;;;;;;;;;;;;;";
             }
 

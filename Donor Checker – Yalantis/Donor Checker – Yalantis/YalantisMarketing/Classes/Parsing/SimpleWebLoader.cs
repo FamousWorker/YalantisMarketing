@@ -24,7 +24,7 @@ namespace YalantisMarketing.Classes.Parsing
             }
             catch (WebException ex)
             {
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
                 return null;
             }
         }

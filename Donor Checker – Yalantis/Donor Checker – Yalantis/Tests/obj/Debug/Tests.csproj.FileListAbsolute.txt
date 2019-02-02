@@ -22,3 +22,5 @@ D:\todaytask\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Deb
 D:\todaytask\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 D:\todaytask\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.exe
 D:\todaytask\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\obj\Debug\Tests.pdb
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\HtmlAgilityPack.dll
+E:\Repos\GitHubFreelance\YalantisMarketing\Donor Checker – Yalantis\Donor Checker – Yalantis\Tests\bin\Debug\Newtonsoft.Json.dll

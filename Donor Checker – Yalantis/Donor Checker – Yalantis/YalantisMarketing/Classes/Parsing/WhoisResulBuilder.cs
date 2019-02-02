@@ -108,7 +108,7 @@ namespace YalantisMarketing.Classes.Parsing
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
                 string result = domain;
                 if (CreationData) result += ";";
                 if (ExpiryData) result += ";";
